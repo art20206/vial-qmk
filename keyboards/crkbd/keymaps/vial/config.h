@@ -56,9 +56,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// Hardcode original Board UID to bypass vial.rocks browser crash
+// Reverse byte order (Little Endian) to perfectly output 4589D8FAC72A3689
 #undef VIAL_KEYBOARD_UID
-#define VIAL_KEYBOARD_UID {0x45, 0x89, 0xD8, 0xFA, 0xC7, 0x2A, 0x36, 0x89}
+#define VIAL_KEYBOARD_UID {0x89, 0x36, 0x2A, 0xC7, 0xFA, 0xD8, 0x89, 0x45}
 
 // Restore 6 layers
 #undef DYNAMIC_KEYMAP_LAYER_COUNT
