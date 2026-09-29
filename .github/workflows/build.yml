@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0
       - name: Build firmware
         run: |
           qmk compile -kb crkbd/rev4_0/standard -km vial
