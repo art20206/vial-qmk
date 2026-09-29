@@ -57,6 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // Hardcode original Board UID to bypass vial.rocks browser crash
+#undef VIAL_KEYBOARD_UID
 #define VIAL_KEYBOARD_UID {0x45, 0x89, 0xD8, 0xFA, 0xC7, 0x2A, 0x36, 0x89}
 
 // Restore 6 layers
