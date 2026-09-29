@@ -13,6 +13,7 @@ jobs:
           fetch-depth: 0
       - name: Build firmware
         run: |
+          git config --global --add safe.directory '*'
           qmk compile -kb crkbd/rev4_0/standard -km vial
       - name: Upload firmware
         uses: actions/upload-artifact@v4
