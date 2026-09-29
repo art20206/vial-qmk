@@ -1,5 +1,6 @@
 VIA_ENABLE          = yes
 VIAL_ENABLE         = yes
+VIAL_RGB_ENABLE     = yes
 LTO_ENABLE          = yes
 
 # Hardware Features
