@@ -53,3 +53,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+
+#pragma once
+
+// Force 6 layers
+#undef DYNAMIC_KEYMAP_LAYER_COUNT
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6
+
+// Match original 32 entries
+#define VIAL_TAP_DANCE_ENTRIES 32
+#define VIAL_COMBO_ENTRIES 32
+#define VIAL_KEY_OVERRIDE_ENTRIES 32
+
+// Match original 16 macro entries
+#define VIAL_MACRO_ENTRIES 16
