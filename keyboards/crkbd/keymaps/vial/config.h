@@ -56,14 +56,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// Force 6 layers
+// Hardcode original Board UID to bypass vial.rocks browser crash
+#define VIAL_KEYBOARD_UID {0x45, 0x89, 0xD8, 0xFA, 0xC7, 0x2A, 0x36, 0x89}
+
+// Restore 6 layers
 #undef DYNAMIC_KEYMAP_LAYER_COUNT
 #define DYNAMIC_KEYMAP_LAYER_COUNT 6
 
-// Match original 32 entries
+// Restore original 32 entries
 #define VIAL_TAP_DANCE_ENTRIES 32
 #define VIAL_COMBO_ENTRIES 32
 #define VIAL_KEY_OVERRIDE_ENTRIES 32
 
-// Match original 16 macro entries
+// Restore original 16 macros
 #define VIAL_MACRO_ENTRIES 16
